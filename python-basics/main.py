@@ -9,3 +9,4 @@ num=2
 isPrime=True
 if num%2==0 and isPrime:
     print("yes")
+ 
