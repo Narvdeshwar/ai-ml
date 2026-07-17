@@ -16,5 +16,10 @@ class BankAccount:
 
     def get_spending_balance(self):
         return self.__spendingbalance
+
+    def add_spending_balance(self,new_balance):
+        self.__spendingbalance+=new_balance
+        return self.__spendingbalance
 u1=BankAccount('ashrith',7000,300)
-print(u1.name,u1._savingbalance,u1.get_spending_balance()) # this is accessible because it is protected attribute
+print(u1.name,u1._savingbalance,u1.get_spending_balance(),u1.add_spending_balance(3000),u1._BankAccount__spendingbalance) # this is accessible because it is protected attribute
+# to access any private access u1._BankAccount__spendingbalance
