@@ -1,19 +1,44 @@
 import json
-file_path="python-basics/test.json"
-read_mode="r"
-write_mode="w"
-# for reading the json file we use the json.load() after reading the file
-print("Intial first file read mode with inital value")
-with open(file_path,read_mode) as f:
-    file_obj=json.load(f)
+
+# File path and file modes
+file_path = "python-basics/test.json"
+read_mode = "r"
+write_mode = "w"
+
+# -----------------------------
+# Read JSON file
+# json.load() converts JSON data into a Python dictionary
+# -----------------------------
+print("Initial file content:")
+
+with open(file_path, read_mode) as f:
+    file_obj = json.load(f)
     print(file_obj)
 
-print("dumping the value")
-dump_obj={"first_name":"ashrith","read_mode":"write","is_valid":True}
-with open(file_path,write_mode) as f:
-    json.dump(dump_obj,f)
+# -----------------------------
+# New data to save into the JSON file
+# -----------------------------
+dump_obj = {
+    "first_name": "ashrith",
+    "read_mode": "write",
+    "is_valid": True
+}
 
-print("Value dumped now new write value")
-with open(file_path,read_mode) as f:
-    file_obj=json.load(f)
+# -----------------------------
+# Write data to JSON file
+# json.dump() writes a Python dictionary into a JSON file
+# indent=4 makes the JSON easy to read
+# -----------------------------
+print("Writing new data...")
+
+with open(file_path, write_mode) as f:
+    json.dump(dump_obj, f, indent=4)
+
+# -----------------------------
+# Read the updated JSON file
+# -----------------------------
+print("Updated file content:")
+
+with open(file_path, read_mode) as f:
+    file_obj = json.load(f)
     print(file_obj)
