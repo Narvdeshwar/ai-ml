@@ -24,3 +24,9 @@ conda create -n <env_name>
 ```
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+
+### 5.1 To activate the env
+```bash
+conda active <env_name>
+```
+![alt text](image-3.png)
