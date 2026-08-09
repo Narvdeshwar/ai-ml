@@ -15,3 +15,12 @@ conda list
 ```bash
 conda env list
 ```
+
+![alt text](image.png)
+
+## 5. To create the new env
+```bash
+conda create -n <env_name>
+```
+![alt text](image-1.png)
+![alt text](image-2.png)
