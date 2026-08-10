@@ -61,5 +61,15 @@ conda env remove -n <env_name>
 ## 6. To download any package
 ```bash
     conda install <package_name>
-    conda install jupyter
+    conda install jupyter // to install
+    jupyter notebook // to open this
+
 ```
+![alt text](image-6.png)
+## 7. To download the jupyterlab
+```bash
+    conda install jupyterlab  // to install
+    jupyter lab // to open this
+
+```
+![alt text](image-7.png)
