@@ -57,3 +57,9 @@ conda deactivate
 conda env remove -n <env_name>
 ```
 ![alt text](image-5.png)
+
+## 6. To download any package
+```bash
+    conda install <package_name>
+    conda install jupyter
+```
