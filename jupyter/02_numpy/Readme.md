@@ -22,3 +22,6 @@ we can declare the data types as well in this
 
 ## 3.3: 1-D
 ![alt text](image-5.png)
+
+## 3.4: prefilling with some value
+![alt text](image-6.png)
