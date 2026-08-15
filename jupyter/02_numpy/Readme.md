@@ -25,3 +25,6 @@ we can declare the data types as well in this
 
 ## 3.4: prefilling with some value
 ![alt text](image-6.png)
+
+## 3.5 Indentity matrix
+![alt text](image-7.png)
