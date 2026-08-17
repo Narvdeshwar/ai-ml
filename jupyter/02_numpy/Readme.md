@@ -36,3 +36,5 @@ we can declare the data types as well in this
 ## 4.1 `shape` - tells the dimension of the array
 ![alt text](image-8.png)
 
+## 4.2 `size` - tells the total number of element presnet
+![alt text](image-10.png)
