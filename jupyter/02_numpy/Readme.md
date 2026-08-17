@@ -38,3 +38,6 @@ we can declare the data types as well in this
 
 ## 4.2 `size` - tells the total number of element presnet
 ![alt text](image-10.png)
+
+## 4.3 `dtype`- tells the datatype of array element
+![alt text](image-11.png)
