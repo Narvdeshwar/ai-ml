@@ -61,3 +61,8 @@ we can declare the data types as well in this
 
 ## 5.4: fancy indexing
 ![alt text](image-17.png)
+
+## 5.5: Boolean indexing
+![alt text](image-18.png)
+
+## 5.6: slicing is similiar to the list slicing
