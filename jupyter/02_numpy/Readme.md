@@ -45,4 +45,6 @@ we can declare the data types as well in this
 ## 4.4 `ndim`- tells the dimesntion of array
 ![alt text](image-12.png)
 
-## 4.5 ``
+## 4.5 `astype` - for array conversion into different data type
+
+![alt text](image-13.png)
