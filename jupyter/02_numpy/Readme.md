@@ -52,3 +52,6 @@ we can declare the data types as well in this
 # 5. Operations
 ## 5.1: `reshape` changes the dimension of array
 ![alt text](image-14.png)
+
+## 5.2: `flatten` it change the array into 1d
+![alt text](image-15.png)
