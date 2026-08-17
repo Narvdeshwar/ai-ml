@@ -30,3 +30,9 @@ we can declare the data types as well in this
 ![alt text](image-7.png)
 
 ## 3.5 similiar to `range` np have `arange`
+## 3.6 `linspace`
+![alt text](image-9.png)
+# 4. Properties
+## 4.1 `shape` - tells the dimension of the array
+![alt text](image-8.png)
+
