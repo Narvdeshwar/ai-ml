@@ -55,3 +55,5 @@ we can declare the data types as well in this
 
 ## 5.2: `flatten` it change the array into 1d
 ![alt text](image-15.png)
+## 5.3: Indexing
+![alt text](image-16.png)
