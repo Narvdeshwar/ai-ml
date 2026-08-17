@@ -48,3 +48,7 @@ we can declare the data types as well in this
 ## 4.5 `astype` - for array conversion into different data type
 
 ![alt text](image-13.png)
+
+# 5. Operations
+## 5.1: `reshape` changes the dimension of array
+![alt text](image-14.png)
