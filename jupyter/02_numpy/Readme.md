@@ -41,3 +41,8 @@ we can declare the data types as well in this
 
 ## 4.3 `dtype`- tells the datatype of array element
 ![alt text](image-11.png)
+
+## 4.4 `ndim`- tells the dimesntion of array
+![alt text](image-12.png)
+
+## 4.5 ``
