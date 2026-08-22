@@ -68,5 +68,5 @@ we can declare the data types as well in this
 ## 5.6: slicing is similiar to the list slicing
 
 ## 5.7 `list` vs `numpy` by using the copy function
-when the we create the copy of list then it make actually copy whereas the numpy array create the view so that list are immutable whereas the numpy array are the mutable
+when the we create the copy of list then it make actually `copy` whereas the numpy array create the `view` so that list are immutable whereas the numpy array are the mutable
 ![alt text](image-19.png)
