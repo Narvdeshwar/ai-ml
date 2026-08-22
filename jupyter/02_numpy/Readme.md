@@ -73,3 +73,15 @@ when the we create the copy of list then it make actually `copy` whereas the num
 
 # 6: commond data type : `dont` use string or object to store the data since numpy is designed to perform the computational operation
 ![alt text](image-20.png)
+
+# 7: Axes (plural of `axis`) in multidimesional array
+ ```bash
+ 1D -> 1-axis
+ 2D -> 2-axis
+       [axis 0 - rows]
+       [axis 1 - column]
+ 3D -> 3-axis
+       [axis 0 - depth/layers]
+       [axis 1 - row in each layers]
+       [axis 2 - columns]
+```
