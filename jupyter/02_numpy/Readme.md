@@ -79,8 +79,8 @@ when the we create the copy of list then it make actually `copy` whereas the num
  ```bash
  1D -> 1-axis
  2D -> 2-axis
-       [axis 0 - rows]
-       [axis 1 - column]
+       [axis 0 - rows => vertically operation]
+       [axis 1 - column => horizontal operation]
  3D -> 3-axis
        [axis 0 - depth/layers]
        [axis 1 - row in each layers]
