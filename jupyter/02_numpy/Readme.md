@@ -71,5 +71,5 @@ we can declare the data types as well in this
 when the we create the copy of list then it make actually `copy` whereas the numpy array create the `view` so that list are immutable whereas the numpy array are the mutable
 ![alt text](image-19.png)
 
-# 6: commond data type
+# 6: commond data type : `dont` use string or object to store the data since numpy is designed to perform the computational operation
 ![alt text](image-20.png)
