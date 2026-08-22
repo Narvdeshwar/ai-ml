@@ -93,3 +93,22 @@ arr3D=np.array([[[1,2,3],[3,4,5],[6,7,8]],[[9,10,11],[12,13,14],[15,16,17]],[[18
 print(arr3D[:,0,:])
 ```
 ![alt text](image-21.png)
+
+# 8: Vectorization vs Broadcasting
+Here are the key differences between `Vectorization` and `Broadcasting` in NumPy:
+1. **Core Meaning**
+    * `Vectorization`: Doing operations on whole arrays at once without using slow Python `loops` (for or while).
+    * `Broadcasting`: A set of rules that allows operations between arrays of `different` shapes.
+2. **The Main Purpose**
+    * `Vectorization:` Saves time and makes code run faster using optimized C-code under the hood.
+    * `Broadcasting:` Saves memory by stretching the smaller array to match the larger array without copying data.
+
+3. **Quick Example**
+    * `Vectorization`:
+        Adding two arrays of the exact same size.
+        * [1, 2, 3] + [4, 5, 6] = [5, 7, 9]
+
+    * `Broadcasting`: Adding a single number (scalar) to a 1D array.
+        * [1, 2, 3] + 10 → NumPy stretches 10 to [10, 10, 10] → Result: [11, 12, 13]
+
+![alt text](image-22.png)
