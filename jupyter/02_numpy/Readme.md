@@ -86,3 +86,10 @@ when the we create the copy of list then it make actually `copy` whereas the num
        [axis 1 - row in each layers]
        [axis 2 - columns]
 ```
+### 7.1 - 3D slicing
+```py
+arr3D=np.array([[[1,2,3],[3,4,5],[6,7,8]],[[9,10,11],[12,13,14],[15,16,17]],[[18,19,20],[21,22,23],[24,25,26]]])
+#print(arr3D,arr3D.shape)
+print(arr3D[:,0,:])
+```
+![alt text](image-21.png)
