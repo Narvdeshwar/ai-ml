@@ -14,5 +14,5 @@ async def welcome():
 
 # extracting the data from the url
 @app.get("/user/{user_id}")
-async def getUserId(user_id):
-    return {"user_id":{user_id}}
+async def getUserId(user_id,k:str=None,name:str=''):
+    return {"user_id":{user_id},"value":k,"name":name}
