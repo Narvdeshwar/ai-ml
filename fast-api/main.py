@@ -17,5 +17,6 @@ async def welcome():
 
 # extracting the data from the url
 @app.post("/user/{user_id}")
+
 async def getUserId(user_id,request_body:UserInfo):
     return {"user_id":{user_id},"age":request_body.age,"name":request_body.name}
