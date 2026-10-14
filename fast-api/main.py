@@ -1,22 +1,36 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import Optional
+
 app=FastAPI()
 
-class UserInfo(BaseModel):
+class todoList(BaseModel):
+    id:int
     name:str
-    age:int
+    description:Optional[str]=None
+    status:Optional[bool]=False
 
-# @app is decorator
-@app.get("/ping")
-async def greet():
-    return {"message":"hello world"}
+todos=[] #in memory todo add
 
-@app.get("/")
-async def welcome():
-    return {"greet":"Welcome"}
+# get list of todos
+@app.get("/todos")
+async def get_all_todos():
+    if len(todos)==0:
+        return "no todos list found"
+    return todos
 
-# extracting the data from the url
-@app.post("/user/{user_id}")
+#create the todo list
+@app.post("/todos")
+async def create_new_todo(todo:todoList):
+    todos.append(todo)
+    return todo
 
-async def getUserId(user_id,request_body:UserInfo):
-    return {"user_id":{user_id},"age":request_body.age,"name":request_body.name}
+@app.delete("/todos/{todo_id}")
+async def delete_todo(todo_id:int):
+    print(todo_id)
+    for todo in todos:
+        print(todo)
+        if todo.id==todo_id:
+            todos.pop(todos.index(todo))
+            return "todo delete successfully"
+    return "item not found"
