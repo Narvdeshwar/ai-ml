@@ -1,22 +1,36 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Optional
-
+from models import TodoModal
+from database import Sessionlocal,engine
 
 app=FastAPI()
 
+TodoModal.metadata.create_all(bind=engine) # create table in the database
 class todoList(BaseModel):
     id:int
     name:str
     description:Optional[str]=None
     status:Optional[bool]=False
 
-class updateList(BaseModel):
-    name:Optional[str]=None
-    description:Optional[str]=None
-    status:Optional[bool]=False
+class todoCreate(TodoModal):
+    pass
 
-todos=[] #in memory todo add
+class todoUpdate(TodoModal):
+    pass
+
+class todoResponse(TodoModal):
+    id:int
+    class Config:
+        orm_mode=True
+
+
+def get_db():
+    db=Sessionlocal()
+    try:
+        yield db
+    finally:
+        db.clase()
 
 # get list of todos
 @app.get("/todos")
